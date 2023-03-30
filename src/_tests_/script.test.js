@@ -1,7 +1,7 @@
 import { getMonth } from '../script.js';
 
 describe('getting the name of the month by number',()=>
-    //тест на корретные значения месяца (>1 и <12)
+    //тест на корретные значения месяца (>=1 и <=12)
     it('correct number',()=>{
         expect(getMonth(1)).toBe('январь');
         expect(getMonth(5)).toBe('май');
